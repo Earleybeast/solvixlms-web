@@ -120,11 +120,11 @@ const CATEGORIES: FaqCategory[] = [
       },
       {
         q: "Can I use SolvixLMS for my specific workflow?",
-        a: "Yes. The platform is method-agnostic at the process layer. Our initial depth is strongest in the areas our own team runs day to day, but the data model accommodates any workflow.",
+        a: "Yes. Any method. The data model doesn't care whether you wash, blast, or run ethanol — it tracks the parameters you actually set. Our initial depth is strongest in the areas our own team runs day to day.",
       },
       {
         q: "Do I need to rip out my current software to try SolvixLMS?",
-        a: "No. SolvixLMS runs alongside your existing compliance and state reporting tools. All seven suites are production-ready and deployable today — most operators start with SolvCORE for production tracking and switch on the rest as they need them.",
+        a: "No. SolvixLMS runs alongside your existing compliance and state reporting tools. All seven suites are built and deployable — most operators start with SolvCORE for production tracking and switch on the rest as they need them.",
       },
     ],
   },

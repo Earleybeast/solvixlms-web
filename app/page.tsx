@@ -625,7 +625,7 @@ function Hero() {
           </h1>
           <p className="hero-sub">
             The only platform built to track your process at parameter depth — not just
-            inventory. Purpose-built for the lab. Designed for every operation.
+            inventory. Purpose-built for the lab.
           </p>
           <WaitlistForm location="hero" />
           <div className="waitlist-helper">
@@ -766,30 +766,37 @@ function PlatformSection() {
     {
       id: "core" as IconName, n: "SolvCORE", d: "Production & batch intelligence",
       detail: "Track every stage of every run at parameter depth. Capture process temperature curves, fraction and grade yields, run profiles, and technician attribution per batch. Institutional knowledge that compounds instead of evaporating.",
+      outcome: "Your best batch stops being a lucky day and becomes a procedure anyone can run.",
     },
     {
       id: "comp" as IconName, n: "SolvCOMP", d: "Compliance & inventory",
       detail: "Lot-level tracking, license trails, and regulatory-reporting exports — produced as a byproduct of running your operation. COA tracking, contamination alerts, and audit trails on every record.",
+      outcome: "The compliance trail writes itself while you work, instead of eating your Friday.",
     },
     {
       id: "erp" as IconName, n: "SolvERP", d: "Consumables & operations",
       detail: "Track consumables, packaging, and operational costs tied to the batches that use them. Cost-per-gram analysis, procurement tracking, and staff management.",
+      outcome: "You find out what a gram actually costs you before the quarter closes.",
     },
     {
       id: "client" as IconName, n: "SolvCLIENT", d: "Client portal & split contracts",
       detail: "Give your clients real-time visibility into their material. Split-contract support for toll processing, automated yield notifications, and client-specific reporting.",
+      outcome: "Your toll clients stop calling you for updates. They log in.",
     },
     {
       id: "lytics" as IconName, n: "SolvLYTICS", d: "Analytics & intelligence",
       detail: "Yield trending by batch, technician performance benchmarking, cost-per-gram drill-downs, and production throughput dashboards — all from your own data.",
+      outcome: "You stop arguing about which tech or which cultivar is carrying the floor.",
     },
     {
       id: "flow" as IconName, n: "SolvFLOW", d: "Workflow & scheduling",
       detail: "Plan production runs, assign equipment and technicians, identify bottlenecks, and see your facility's capacity at a glance.",
+      outcome: "You stop losing a press day to a scheduling collision.",
     },
     {
       id: "comm" as IconName, n: "SolvCOMM", d: "Command center",
       detail: "Your facility's nerve center. Real-time batch status, active alerts, staff notifications, and shift handoff summaries in one view.",
+      outcome: "You know what's happening on the floor without walking it.",
     },
   ];
 
@@ -836,6 +843,7 @@ function PlatformSection() {
                 <p className="suite-desc">{suite.d}</p>
                 <div className="suite-expand">
                   <p className="suite-desc">{suite.detail}</p>
+                  <p className="suite-outcome">{suite.outcome}</p>
                 </div>
               </div>
             );
@@ -1053,7 +1061,7 @@ function AudienceSection() {
     <section className="reveal">
       <div className="container">
         <div className="section-tag mono">// Who It&apos;s For</div>
-        <h2 className="section-h">Built for the lab. Designed for every operation.</h2>
+        <h2 className="section-h">Built for the lab.</h2>
         <div className="aud-grid">
           <div className="aud-card">
             <div className="gloss" />
@@ -1281,7 +1289,7 @@ const FAQ_DATA: [string, string][] = [
   ],
   [
     "Do I need to rip out my current software to try SolvixLMS?",
-    "It depends on what you run today. SolvixLMS replaces general inventory and spreadsheet tools with a system purpose-built to track your process. Regulatory and state-reporting systems are different: SolvixLMS is designed to integrate with those, not replace them. All seven suites are production-ready and deployable today — turn on what you need and add the rest when you're ready.",
+    "It depends on what you run today. SolvixLMS replaces general inventory and spreadsheet tools with a system purpose-built to track your process. Regulatory and state-reporting systems are different: SolvixLMS is designed to integrate with those, not replace them. All seven suites are built and deployable — turn on what you need and add the rest when you're ready.",
   ],
   [
     "What does onboarding look like?",
@@ -1297,7 +1305,7 @@ const FAQ_DATA: [string, string][] = [
   ],
   [
     "Can I use SolvixLMS for my specific workflow?",
-    "The platform is method-agnostic at the process layer — the data model accommodates any workflow. Our initial depth is strongest in the areas our own team runs day to day; additional workflow templates are rolling out next, built the same way with full process tracking from intake to packaging. Get on the waitlist and tell us your process; we prioritize what our customers need.",
+    "Any method. The data model doesn't care whether you wash, blast, or run ethanol — it tracks the parameters you actually set. Our initial depth is strongest in the areas our own team runs day to day; additional workflow templates are rolling out next, built the same way with full process tracking from intake to packaging. Get on the waitlist and tell us your process; we prioritize what our customers need.",
   ],
   [
     "What happens to my data if I cancel?",

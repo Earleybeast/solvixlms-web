@@ -312,8 +312,12 @@ h1 {
   transition: max-height .4s cubic-bezier(.22,1,.36,1), margin-top .3s;
   margin-top: 0;
 }
-.suite-card.open .suite-expand { max-height: 200px; margin-top: 12px; }
+.suite-card.open .suite-expand { max-height: 340px; margin-top: 12px; }
 .suite-expand p { font-size: 13px; color: var(--text-muted); line-height: 1.6; margin: 0; padding-top: 10px; border-top: 1px solid var(--border-subtle); }
+.suite-expand .suite-outcome {
+  margin-top: 10px; padding-top: 0; border-top: none;
+  color: var(--accent-amber); font-weight: 600;
+}
 .roadmap-row { background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: 12px; padding: 20px 24px; }
 .roadmap-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 14px; }
 .roadmap-items { display: flex; gap: 24px; flex-wrap: wrap; }
