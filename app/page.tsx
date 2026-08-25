@@ -1010,8 +1010,8 @@ function FlywheelSection() {
   const nodes = [
     { n: "TRACK", d: "SolvCORE captures every parameter", c: 1 },
     { n: "CONNECT", d: "SolvLINK multiplies data density", c: 2, roadmap: true },
-    { n: "LEARN", d: "Cross-batch intelligence compounds", c: 3 },
-    { n: "SPEAK", d: "Bishop delivers insight at the point of work", c: 4, roadmap: true },
+    { n: "LEARN", d: "Designed to learn across facilities as the network grows", c: 3 },
+    { n: "SPEAK", d: "Bishop is in early access, designed to surface insight at the point of work", c: 4, roadmap: true, chip: true },
     { n: "IMPROVE", d: "Operators make measurably better decisions", c: 5 },
     { n: "PROVE", d: "Outcomes backed by the record", c: 6, roadmap: true },
   ];
@@ -1033,7 +1033,10 @@ function FlywheelSection() {
               data-c={node.c}
             >
               <div className="num">0{i + 1}</div>
-              <div className="name">{node.n}</div>
+              <div className="name">
+                {node.n}
+                {node.chip ? <span className="roadmap-tag">[roadmap]</span> : null}
+              </div>
               <div className="desc">{node.d}</div>
             </div>
           ))}
